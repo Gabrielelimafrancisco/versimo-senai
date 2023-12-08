@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Versímo-Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <img src="imagens/logoversímo.png" alt="logo versimo" class="logo">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Catálogo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="catalogo">
+
+        <h2 class="title">Catálogo</h2>
+
+        <div class="pai">
+
+            <div class="dupla">
+                <div class="card">
+                    <div>
+                        <img class="capas" src="imagens/livroharrypottereditadointerno.png" alt="Harry Potter">
+                    </div>
+
+                    <div class="textos">
+                        <h3>Harry potter</h3>
+                        <p class="description">
+                            No dia de seu aniversário de 11 anos, Harry recebe uma carta e descobre sua verdadeira
+                            história e seu destino.
+                        </p>
+                        <button class="button">comprar aqui</button>
+                        <img class="like" src="imagens/corac.png" alt="like">
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div>
+                        <img class="capas" src="imagens/um_de_nós_esta_mentindo.jpg" alt="Um de nós está mentindo">
+                    </div>
+
+                    <div class="textos">
+                        <h3>Um de nós está mentindo</h3>
+                        <p class="description">
+                            Cinco alunos entram em detenção na escola e apenas quatro saem com vida. Todos são
+                            suspeitos e cada um tem algo a esconder.
+                        </p>
+                        <button class="button">comprar aqui</button>
+                        <img class="like" src="imagens/corac.png" alt="like">
+                    </div>
+
+                </div>
+            </div>
+            <div class="dupla">
+                <div class="card">
+                    <div>
+                        <img class="capas" src="imagens/anatomiadomalinterno.png" alt="Anatomia do mal">
+                    </div>
+
+                    <div class="textos">
+                        <h3>Anatomia do mal</h3>
+                        <p class="description">Traz não só casos modernas de assassinos em série, mas também casos
+                            antigos que remetem até a Roma antiga e a Idade Média.
+                        </p>
+                        <button class="button">comprar aqui</button>
+                        <img class="like" src="imagens/corac.png" alt="like">
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img class="capas" src="imagens/evelynhugobaiocoexterno.JPG" alt="Evelyn hugo">
+                    </div>
+
+                    <div class="textos">
+                        <h3>Evelyn hugo</h3>
+                        <p class="description">Uma história sobre uma atriz de cinema que teve que abrir mão de do
+                            grande amor, para que pudesse viver a sua carreira dos sonhos.
+                        </p>
+                        <button class="button">comprar aqui</button>
+                        <img class="like" src="imagens/corac.png" alt="like">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer class="rodape">
+
+
+        <img class="logomenu" src="imagens/pretologo.png" alt="logo">
+
+
+        <div class="imagensrodapé">
+            <img class="img" src="imagens/whatsapp.png" alt="whatsapp" width="90px">
+            <img class="img" src="imagens/instagramcerto2.png" alt="instagram" width="90px">
+            <img class="img" src="imagens/twitter.png" alt="twitter" width="90px">
+        </div>
+        </class>
+
+
+        <p>Copyright ©️ 2023 gabriele | All Rights Reserved </p>
+        </div>
+
+    </footer>
+
+    <div class="geral">
+        <div id="popup-container">
+            <img src="imagens/um_de_nós_esta_mentindo.jpg" alt="livro">
+            <p>Ganhe 10% de desconto na sua primeira compra.</p>
+            <button onclick="closePopup()">Fechar</button>
+        </div>
+    </div>
+    <script>
+        // Abre o pop-up após 3 segundos (3000 milissegundos)
+        setTimeout(openPopup, 3000);
+
+        function openPopup() {
+            document.getElementById('popup-container').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('popup-container').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        }
+    </script>
+
+
+</body>
+
+
+
+
+</html>
